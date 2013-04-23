@@ -1,0 +1,4 @@
+" バックアップファイル
+set backup
+set backupdir=$HOME/.vim-backup
+let &directory = &backupdir
