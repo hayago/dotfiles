@@ -1,4 +1,13 @@
-" バックアップファイル
-set backup
-set backupdir=$HOME/.vim-backup
-let &directory = &backupdir
+" ファイルを上書きする前にバックアップファイルを作る
+" set backup
+" バックアップのディレクトリ
+" set backupdir=~/.vim/vim_backup
+" バックアップを取らない
+set nobackup
+" スワップファイルを使用する設定
+" set swapfile
+" スワップファイル用のディレクトリ名を、コンマで区切って指定する
+" set directory=~/.vim/vim_swap
+" スワップファイルを作らない
+set noswapfile
+

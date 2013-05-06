@@ -1,0 +1,11 @@
+" 行番号を表示
+set number
+
+" 改行時に自動でインデント
+set autoindent
+
+" タブ幅の設定
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4

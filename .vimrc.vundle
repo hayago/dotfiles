@@ -5,12 +5,14 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required!
+" required! 
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
-Bundle "pangloss/vim-javascript"
+Bundle 'Shougo/vimproc'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimfiler'
+" ...
 
 filetype plugin indent on     " required!
 "
@@ -22,10 +24,3 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
-
-
-" 各種モジュール設定
-" vim-javascriptの設定
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
