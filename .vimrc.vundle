@@ -12,6 +12,9 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/vimproc'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
+Bundle 'quickrun.vim'
+Bundle 'Markdown'
+
 " ...
 
 filetype plugin indent on     " required!
