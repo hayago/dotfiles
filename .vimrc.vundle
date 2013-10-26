@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/vimproc'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
+Bundle 'mattn/emmet-vim'
 " ...
 
 filetype plugin indent on     " required!
@@ -24,3 +25,20 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Module Settings Start
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"""""""unite"""""""
+" 入力モードで開始する
+let g:unite_enable_start_insert=1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Module Settings End
+""""""""""""""""""""""""""""""""""""""""""""""""""
