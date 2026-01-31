@@ -1,0 +1,51 @@
+{
+    "window.zoomLevel": 1,
+    "editor.lineHeight": 20,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "files.insertFinalNewline": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.tree.indent": 28,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "after": [
+                "<Down>"
+            ]
+        },
+        {
+            "before": [
+                "<C-p>"
+            ],
+            "after": [
+                "<Up>"
+            ]
+        },
+        {
+            "before": [
+                "<C-f>"
+            ],
+            "after": [
+                "<Right>"
+            ]
+        },
+        {
+            "before": [
+                "<C-b>"
+            ],
+            "after": [
+                "<Left>"
+            ]
+        }
+    ],
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Cursor Light",
+    "python.languageServer": "None"
+}

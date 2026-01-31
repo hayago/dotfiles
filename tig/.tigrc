@@ -1,0 +1,3 @@
+# 長い行を折り返し
+set wrap-lines = yes
+
