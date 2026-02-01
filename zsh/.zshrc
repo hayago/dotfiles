@@ -3,6 +3,12 @@ alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -aG'
 
+# vi, vim -> nvim
+if command -v nvim &> /dev/null; then
+  alias vi='nvim'
+  alias vim='nvim'
+fi
+
 # インクリメンタルサーチ(Ctrl+s)が効くようにする
 stty stop undef
 
