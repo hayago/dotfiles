@@ -11,3 +11,6 @@ reload_timer:start(0, 200, vim.schedule_wrap(function()
   vim.cmd("checktime")
 end))
 
+-- マウスホイールで1行ずつスクロールしてスムーズにスクロールする
+vim.opt.mousescroll = "ver:1,hor:1"
+
