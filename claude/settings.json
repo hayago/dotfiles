@@ -1,4 +1,7 @@
 {
+  "env": {
+    "EDITOR": "nvim"
+  },
   "permissions": {
     "allow": [
       "WebSearch"
@@ -6,8 +9,5 @@
   },
   "enabledPlugins": {
     "pyright-lsp@claude-plugins-official": true
-  },
-  "env": {
-    "EDITOR": "nvim"
   }
 }
