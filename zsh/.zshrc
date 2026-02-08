@@ -3,6 +3,11 @@ alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -aG'
 
+# ディレクトリ移動のためのエイリアス
+alias pu=pushd
+alias po=popd
+alias di='dirs -v'
+
 # nvim alias
 if command -v nvim &> /dev/null; then
   alias v='nvim'
