@@ -3,11 +3,19 @@ alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -aG'
 
-# vi, vim -> nvim
+# nvim alias
 if command -v nvim &> /dev/null; then
+  alias v='nvim'
   alias vi='nvim'
   alias vim='nvim'
 fi
+
+# CDPATH
+CDPATH="."
+for dir in $HOME/workspace/*/; do
+  CDPATH="$CDPATH:${dir%/}"
+done
+export CDPATH
 
 # インクリメンタルサーチ(Ctrl+s)が効くようにする
 stty stop undef
