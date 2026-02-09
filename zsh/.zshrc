@@ -15,6 +15,9 @@ if command -v nvim &> /dev/null; then
   alias vim='nvim'
 fi
 
+# alias(python)
+alias venv='source .venv/bin/activate'
+
 # CDPATH
 CDPATH="."
 for dir in $HOME/workspace/*/; do
