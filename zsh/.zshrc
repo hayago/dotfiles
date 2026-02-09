@@ -18,6 +18,11 @@ fi
 # alias(python)
 alias venv='source .venv/bin/activate'
 
+# alias(tree)
+if command -v tree &> /dev/null; then
+  alias t='tree -C -L 2 --dirsfirst'
+fi
+
 # CDPATH
 CDPATH="."
 for dir in $HOME/workspace/*/; do
