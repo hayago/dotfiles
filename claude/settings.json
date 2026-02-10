@@ -5,7 +5,8 @@
   "permissions": {
     "allow": [
       "WebSearch"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   },
   "enabledPlugins": {
     "pyright-lsp@claude-plugins-official": true
