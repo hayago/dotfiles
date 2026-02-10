@@ -1,27 +1,36 @@
-# Alias
+######## Alias start ########
+
+# ls
 alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -aG'
 
-# ディレクトリ移動のためのエイリアス
+# Move directory
 alias pd='pushd > /dev/null'
 alias po='popd > /dev/null'
 alias d='dirs -v'
 
-# nvim alias
+# nvim
 if command -v nvim &> /dev/null; then
   alias v='nvim'
   alias vi='nvim'
   alias vim='nvim'
 fi
 
-# alias(python)
+# python
 alias venv='source .venv/bin/activate'
 
-# alias(tree)
+# tree
 if command -v tree &> /dev/null; then
   alias t='tree -C -L 2 --dirsfirst'
 fi
+
+# claude code
+if command -v claude &> /dev/null; then
+  alias cc='claude'
+fi
+
+######## Alias end ########
 
 # CDPATH
 CDPATH="."
