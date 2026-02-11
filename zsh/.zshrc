@@ -1,4 +1,15 @@
-######## Alias start ########
+#### Basic settings start ####
+
+# インクリメンタルサーチ(Ctrl+s)が効くようにする
+stty stop undef
+
+# Prompt
+PROMPT='%c %# '
+
+#### Basic settings end ####
+
+
+#### Alias settings start ####
 
 # ls
 alias ls='ls -G'
@@ -30,7 +41,13 @@ if command -v claude &> /dev/null; then
   alias cc='claude'
 fi
 
-######## Alias end ########
+#### Alias settings end ####
+
+
+#### Path settings start ####
+
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # CDPATH
 CDPATH="."
@@ -39,11 +56,10 @@ for dir in $HOME/workspace/*/; do
 done
 export CDPATH
 
-# インクリメンタルサーチ(Ctrl+s)が効くようにする
-stty stop undef
+#### Path settings end ####
 
-# Prompt
-PROMPT='%c %# '
+
+#### Completion settings start ####
 
 # zsh command completion
 if type brew &>/dev/null; then
@@ -52,11 +68,16 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+# completeコマンドの有効化
+autoload -Uz bashcompinit && bashcompinit
+
 # AWS CLIのコマンド補完の有効化
 command -v aws_completer &>/dev/null && complete -C aws_completer aws
 
-# PATH
-export PATH="$HOME/.local/bin:$PATH"
+#### Completion settings end ####
+
+
+#### Other settings start ####
 
 # nvm (Node version manager)
 export NVM_DIR="$HOME/.nvm"
@@ -77,3 +98,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # LM Studio CLI (lms)
 export PATH="$PATH:~/.lmstudio/bin"
 
+#### Other settings end ####
