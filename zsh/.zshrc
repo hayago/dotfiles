@@ -19,11 +19,10 @@ alias la='ls -aG'
 # Move directory
 alias pd='pushd > /dev/null'
 alias po='popd > /dev/null'
-alias d='dirs -v'
+alias dr='dirs -v'
 
 # nvim
 if command -v nvim &> /dev/null; then
-  alias v='nvim'
   alias vi='nvim'
   alias vim='nvim'
 fi
@@ -33,7 +32,7 @@ alias venv='source .venv/bin/activate'
 
 # tree
 if command -v tree &> /dev/null; then
-  alias t='tree -C -L 2 --dirsfirst'
+  alias tree='tree -C -L 2 --dirsfirst'
 fi
 
 # claude code
