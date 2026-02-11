@@ -49,7 +49,7 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 
 # CDPATH
-CDPATH="."
+CDPATH=".:$HOME/workspace"
 for dir in $HOME/workspace/*/; do
   CDPATH="$CDPATH:${dir%/}"
 done
