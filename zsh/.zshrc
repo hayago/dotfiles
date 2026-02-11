@@ -38,7 +38,7 @@ fi
 
 # claude code
 if command -v claude &> /dev/null; then
-  alias cc='claude'
+  alias cl='claude'
 fi
 
 #### Alias settings end ####
