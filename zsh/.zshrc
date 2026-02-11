@@ -52,6 +52,9 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+# AWS CLIのコマンド補完の有効化
+command -v aws_completer &>/dev/null && complete -C aws_completer aws
+
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
 
