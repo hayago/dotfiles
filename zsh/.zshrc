@@ -8,6 +8,19 @@ PROMPT='%c %# '
 
 #### Basic settings end ####
 
+#### Path settings start ####
+
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# CDPATH
+CDPATH=".:$HOME/workspace"
+for dir in $HOME/workspace/*/; do
+  CDPATH="$CDPATH:${dir%/}"
+done
+export CDPATH
+
+#### Path settings end ####
 
 #### Alias settings start ####
 
@@ -43,19 +56,6 @@ fi
 #### Alias settings end ####
 
 
-#### Path settings start ####
-
-# PATH
-export PATH="$HOME/.local/bin:$PATH"
-
-# CDPATH
-CDPATH=".:$HOME/workspace"
-for dir in $HOME/workspace/*/; do
-  CDPATH="$CDPATH:${dir%/}"
-done
-export CDPATH
-
-#### Path settings end ####
 
 
 #### Completion settings start ####
