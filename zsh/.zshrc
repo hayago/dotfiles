@@ -41,7 +41,19 @@ if command -v nvim &> /dev/null; then
 fi
 
 # python
-alias venv='source .venv/bin/activate'
+function venv() {
+  local dir="$PWD"
+  while [[ "$dir" != "/" ]]; do
+    if [[ -d "$dir/.venv" ]]; then
+      echo "activated: $dir/.venv"
+      source "$dir/.venv/bin/activate"
+      return
+    fi
+    dir="$(dirname "$dir")"
+  done
+  echo ".venv not found"
+  return 1
+}
 
 # tree
 if command -v tree &> /dev/null; then
