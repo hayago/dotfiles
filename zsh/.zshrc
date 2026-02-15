@@ -15,9 +15,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # CDPATH
 CDPATH=".:$HOME/workspace"
-for dir in $HOME/workspace/*/; do
-  CDPATH="$CDPATH:${dir%/}"
-done
+if [[ -d "$HOME/workspace" ]]; then
+  for dir in $HOME/workspace/*/; do
+    [[ -d "$dir" ]] && CDPATH="$CDPATH:${dir%/}"
+  done
+fi
 export CDPATH
 
 #### Path settings end ####
