@@ -34,7 +34,7 @@ alias la='ls -aG'
 # Move directory
 alias pd='pushd > /dev/null'
 alias po='popd > /dev/null'
-alias dr='dirs -v'
+alias di='dirs -v'
 
 # nvim
 if command -v nvim &> /dev/null; then
