@@ -7,6 +7,9 @@ vim.opt.number = true
 -- マウスホイールで1行ずつスクロールしてスムーズにスクロールする
 vim.opt.mousescroll = "ver:1,hor:1"
 
+-- netrwのデフォルト表示をツリー表示にする
+vim.g.netrw_liststyle = 3
+
 -- 外部でファイルが変更されたら自動でリロード
 vim.opt.autoread = true
 vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
