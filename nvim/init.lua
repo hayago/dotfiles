@@ -9,6 +9,8 @@ vim.opt.mousescroll = "ver:1,hor:1"
 
 -- netrwのデフォルト表示をツリー表示にする
 vim.g.netrw_liststyle = 3
+-- プレビューを縦分割で開く
+vim.g.netrw_preview = 1
 
 -- 外部でファイルが変更されたら自動でリロード
 vim.opt.autoread = true
