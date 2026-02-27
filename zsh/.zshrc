@@ -92,7 +92,7 @@ command -v aws_completer &>/dev/null && complete -C aws_completer aws
 
 #### Other settings start ####
 # direnvを有効化(https://direnv.net/)
-eval "$(direnv hook zsh)"
+command -v direnv &>/dev/null && eval "$(direnv hook zsh)"
 
 # nvm (Node version manager)
 export NVM_DIR="$HOME/.nvm"
